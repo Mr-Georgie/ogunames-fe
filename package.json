@@ -1,0 +1,26 @@
+{
+  "name": "ogunames",
+  "version": "1.0.0",
+  "description": "the frontend template for ogunames.com",
+  "main": "index.html",
+  "scripts": {
+    "build-tailwind": "npx tailwindcss -i ./src/input.css -o ./css/tailwind.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aziemma/Frontend-Template-OgunNames.git"
+  },
+  "keywords": [
+    "open",
+    "source"
+  ],
+  "author": "ogunames.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aziemma/Frontend-Template-OgunNames/issues"
+  },
+  "homepage": "https://github.com/aziemma/Frontend-Template-OgunNames#readme"
+}
