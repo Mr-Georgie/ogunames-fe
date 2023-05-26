@@ -4,7 +4,7 @@
   "description": "the frontend template for ogunames.com",
   "main": "index.html",
   "scripts": {
-    "build-tailwind": "npx tailwindcss -i ./src/input.css -o ./css/tailwind.css --watch"
+    "build-tailwind": "npx tailwindcss -i ./src/input.css -o ./src/css/tailwind.css --watch"
   },
   "devDependencies": {
     "tailwindcss": "^3.2.4"
