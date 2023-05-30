@@ -5,7 +5,17 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        inter: ["Inter", "sans-serif"],
+        inter: ["Lato", "sans-serif"],
+      },
+      zIndex: {
+        "-1": "-1",
+      },
+      transformOrigin: {
+        0: "0%",
+      },
+      colors: {
+        "custom-orange": "rgb(245,154,23)",
+        "hover-orange": "rgba(245, 154, 23, 0.9)",
       },
     },
   },
@@ -13,4 +23,7 @@ module.exports = {
     preflight: true,
   },
   plugins: [],
+  variants: {
+    borderColor: ["responsive", "hover", "focus", "focus-within"],
+  },
 };
