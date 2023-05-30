@@ -524,6 +524,25 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+<<<<<<< Updated upstream
+=======
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.right-0{
+  right: 0px;
+}
+
+.top-12{
+  top: 3rem;
+}
+
+>>>>>>> Stashed changes
 .col-span-4{
   grid-column: span 4 / span 4;
 }
@@ -531,6 +550,11 @@ video {
 .my-2{
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.mx-8{
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .-mt-2{
@@ -569,6 +593,13 @@ video {
   height: 2.25rem;
 }
 
+<<<<<<< Updated upstream
+=======
+.h-\[40px\]{
+  height: 40px;
+}
+
+>>>>>>> Stashed changes
 .h-\[71px\]{
   height: 71px;
 }
@@ -589,6 +620,17 @@ video {
   width: 2.25rem;
 }
 
+<<<<<<< Updated upstream
+=======
+.w-\[323px\]{
+  width: 323px;
+}
+
+.w-\[60px\]{
+  width: 60px;
+}
+
+>>>>>>> Stashed changes
 .w-full{
   width: 100%;
 }
@@ -641,6 +683,13 @@ video {
   border-radius: 1.5rem;
 }
 
+<<<<<<< Updated upstream
+=======
+.rounded-\[10px\]{
+  border-radius: 10px;
+}
+
+>>>>>>> Stashed changes
 .rounded-full{
   border-radius: 9999px;
 }
@@ -649,13 +698,31 @@ video {
   border-width: 1px;
 }
 
+.border-2{
+  border-width: 2px;
+}
+
 .border-b{
   border-bottom-width: 1px;
+}
+
+.border-b-2{
+  border-bottom-width: 2px;
 }
 
 .border-slate-100{
   --tw-border-opacity: 1;
   border-color: rgb(241 245 249 / var(--tw-border-opacity));
+}
+
+.border-red-400{
+  --tw-border-opacity: 1;
+  border-color: rgb(248 113 113 / var(--tw-border-opacity));
+}
+
+.border-slate-200{
+  --tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
 }
 
 .bg-\[\#F59A17\]{
@@ -678,6 +745,14 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+<<<<<<< Updated upstream
+=======
+.bg-slate-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+}
+
+>>>>>>> Stashed changes
 .p-2{
   padding: 0.5rem;
 }
@@ -711,9 +786,20 @@ video {
   padding-bottom: 1rem;
 }
 
+<<<<<<< Updated upstream
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
+=======
+.px-7{
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+>>>>>>> Stashed changes
 }
 
 .pb-10{
@@ -732,8 +818,13 @@ video {
   padding-top: 1.5rem;
 }
 
+<<<<<<< Updated upstream
 .pt-8{
   padding-top: 2rem;
+=======
+.pb-6{
+  padding-bottom: 1.5rem;
+>>>>>>> Stashed changes
 }
 
 .text-center{
@@ -802,6 +893,10 @@ video {
   text-transform: uppercase;
 }
 
+.text-\[\#00000075\]{
+  color: #00000075;
+}
+
 .text-\[\#278DE1\]{
   --tw-text-opacity: 1;
   color: rgb(39 141 225 / var(--tw-text-opacity));
@@ -831,6 +926,14 @@ video {
   color: rgb(245 154 23 / var(--tw-text-opacity));
 }
 
+<<<<<<< Updated upstream
+=======
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+>>>>>>> Stashed changes
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -850,6 +953,27 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+<<<<<<< Updated upstream
+=======
+.shadow-xl{
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.outline{
+  outline-style: solid;
+}
+
+.outline-1{
+  outline-width: 1px;
+}
+
+.outline-\[\#999999\]{
+  outline-color: #999999;
+}
+
+>>>>>>> Stashed changes
 .searchbar-container {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -901,6 +1025,13 @@ video {
 }
 
 @media (min-width: 768px){
+<<<<<<< Updated upstream
+=======
+  .md\:-right-12{
+    right: -3rem;
+  }
+
+>>>>>>> Stashed changes
   .md\:col-span-2{
     grid-column: span 2 / span 2;
   }
@@ -918,6 +1049,13 @@ video {
     display: grid;
   }
 
+<<<<<<< Updated upstream
+=======
+  .md\:max-w-\[600px\]{
+    max-width: 600px;
+  }
+
+>>>>>>> Stashed changes
   .md\:max-w-\[700px\]{
     max-width: 700px;
   }
@@ -943,6 +1081,14 @@ video {
     padding-right: 5rem;
   }
 
+<<<<<<< Updated upstream
+=======
+  .md\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+>>>>>>> Stashed changes
   .md\:py-0{
     padding-top: 0px;
     padding-bottom: 0px;
