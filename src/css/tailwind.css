@@ -524,11 +524,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> landing-page
 .absolute{
   position: absolute;
 }
@@ -537,87 +532,14 @@ video {
   position: relative;
 }
 
-<<<<<<< HEAD
 .right-0{
   right: 0px;
-=======
-.top-0{
-  top: 0px;
-}
-
-.bottom-0{
-  bottom: 0px;
-}
-
-.bottom-4{
-  bottom: 1rem;
-}
-
-.top-4{
-  top: 1rem;
-}
-
-.top-16{
-  top: 4rem;
-}
-
-.top-8{
-  top: 2rem;
->>>>>>> landing-page
 }
 
 .top-12{
   top: 3rem;
 }
 
-<<<<<<< HEAD
->>>>>>> Stashed changes
-=======
-.left-1\/2{
-  left: 50%;
-}
-
-.-left-1\/2{
-  left: -50%;
-}
-
-.left-2{
-  left: 0.5rem;
-}
-
-.left-0{
-  left: 0px;
-}
-
-.right-0{
-  right: 0px;
-}
-
-.right-1{
-  right: 0.25rem;
-}
-
-.right-2{
-  right: 0.5rem;
-}
-
-.-right-2{
-  right: -0.5rem;
-}
-
-.-right-4{
-  right: -1rem;
-}
-
-.-right-8{
-  right: -2rem;
-}
-
-.-right-10{
-  right: -2.5rem;
-}
-
->>>>>>> landing-page
 .col-span-4{
   grid-column: span 4 / span 4;
 }
@@ -627,14 +549,6 @@ video {
   margin-bottom: 0.5rem;
 }
 
-<<<<<<< HEAD
-.mx-8{
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
-=======
->>>>>>> landing-page
 .-mt-2{
   margin-top: -0.5rem;
 }
@@ -655,13 +569,10 @@ video {
   display: flex;
 }
 
-<<<<<<< HEAD
-=======
 .grid{
   display: grid;
 }
 
->>>>>>> landing-page
 .h-1{
   height: 0.25rem;
 }
@@ -678,36 +589,12 @@ video {
   height: 2.25rem;
 }
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
 .h-\[40px\]{
   height: 40px;
 }
 
->>>>>>> Stashed changes
 .h-\[71px\]{
   height: 71px;
-=======
-.h-\[300px\]{
-  height: 300px;
-}
-
-.h-\[71px\]{
-  height: 71px;
-}
-
-.h-\[600px\]{
-  height: 600px;
-}
-
-.h-\[400px\]{
-  height: 400px;
-}
-
-.h-\[40px\]{
-  height: 40px;
->>>>>>> landing-page
 }
 
 .w-4{
@@ -726,9 +613,6 @@ video {
   width: 2.25rem;
 }
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
 .w-\[323px\]{
   width: 323px;
 }
@@ -737,50 +621,12 @@ video {
   width: 60px;
 }
 
->>>>>>> Stashed changes
-=======
-.w-\[300px\]{
-  width: 300px;
-}
-
->>>>>>> landing-page
 .w-full{
   width: 100%;
 }
 
-.w-\[\]{
-  width: ;
-}
-
-.w-\[60px\]{
-  width: 60px;
-}
-
-.w-\[323px\]{
-  width: 323px;
-}
-
 .grow{
   flex-grow: 1;
-}
-
-.translate-x-1{
-  --tw-translate-x: 0.25rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-x-1\/2{
-  --tw-translate-x: 50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-translate-x-1\/2{
-  --tw-translate-x: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.transform{
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer{
@@ -827,8 +673,6 @@ video {
   gap: 2rem;
 }
 
-<<<<<<< HEAD
-=======
 .gap-x-4{
   -moz-column-gap: 1rem;
        column-gap: 1rem;
@@ -838,40 +682,24 @@ video {
   row-gap: 1.5rem;
 }
 
->>>>>>> landing-page
 .rounded-3xl{
   border-radius: 1.5rem;
 }
 
-<<<<<<< Updated upstream
-=======
 .rounded-\[10px\]{
   border-radius: 10px;
 }
 
->>>>>>> Stashed changes
 .rounded-full{
   border-radius: 9999px;
-}
-
-.rounded-\[10px\]{
-  border-radius: 10px;
 }
 
 .border{
   border-width: 1px;
 }
 
-.border-2{
-  border-width: 2px;
-}
-
 .border-b{
   border-bottom-width: 1px;
-}
-
-.border-b-2{
-  border-bottom-width: 2px;
 }
 
 .border-slate-100{
@@ -879,19 +707,11 @@ video {
   border-color: rgb(241 245 249 / var(--tw-border-opacity));
 }
 
-<<<<<<< HEAD
-.border-red-400{
-  --tw-border-opacity: 1;
-  border-color: rgb(248 113 113 / var(--tw-border-opacity));
-}
-
 .border-slate-200{
   --tw-border-opacity: 1;
   border-color: rgb(226 232 240 / var(--tw-border-opacity));
 }
 
-=======
->>>>>>> landing-page
 .bg-\[\#F59A17\]{
   --tw-bg-opacity: 1;
   background-color: rgb(245 154 23 / var(--tw-bg-opacity));
@@ -902,14 +722,6 @@ video {
   background-color: rgb(247 247 247 / var(--tw-bg-opacity));
 }
 
-<<<<<<< HEAD
-=======
-.bg-red-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
-}
-
->>>>>>> landing-page
 .bg-slate-50{
   --tw-bg-opacity: 1;
   background-color: rgb(248 250 252 / var(--tw-bg-opacity));
@@ -920,23 +732,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-.bg-slate-200{
-  --tw-bg-opacity: 1;
-  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
-=======
-.bg-\[\]{
-  background-color: ;
-}
-
-.bg-\[\#\]{
-  background-color: #;
->>>>>>> landing-page
-}
-
->>>>>>> Stashed changes
 .p-2{
   padding: 0.5rem;
 }
@@ -974,31 +769,21 @@ video {
   padding-bottom: 1rem;
 }
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
-=======
-.px-7{
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
 }
 
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
->>>>>>> Stashed changes
-}
-
-=======
->>>>>>> landing-page
 .pb-10{
   padding-bottom: 2.5rem;
 }
 
 .pb-4{
   padding-bottom: 1rem;
+}
+
+.pb-6{
+  padding-bottom: 1.5rem;
 }
 
 .pt-4{
@@ -1009,13 +794,8 @@ video {
   padding-top: 1.5rem;
 }
 
-<<<<<<< Updated upstream
 .pt-8{
   padding-top: 2rem;
-=======
-.pb-6{
-  padding-bottom: 1.5rem;
->>>>>>> Stashed changes
 }
 
 .text-center{
@@ -1064,13 +844,6 @@ video {
   line-height: 1rem;
 }
 
-<<<<<<< HEAD
-=======
-.text-\[124px\]{
-  font-size: 124px;
-}
-
->>>>>>> landing-page
 .font-bold{
   font-weight: 700;
 }
@@ -1091,13 +864,10 @@ video {
   text-transform: uppercase;
 }
 
-<<<<<<< HEAD
 .text-\[\#00000075\]{
   color: #00000075;
 }
 
-=======
->>>>>>> landing-page
 .text-\[\#278DE1\]{
   --tw-text-opacity: 1;
   color: rgb(39 141 225 / var(--tw-text-opacity));
@@ -1127,59 +897,16 @@ video {
   color: rgb(245 154 23 / var(--tw-text-opacity));
 }
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
 .text-black{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
->>>>>>> Stashed changes
-=======
->>>>>>> landing-page
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-<<<<<<< HEAD
-=======
-.text-black{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.text-\[1\]{
-  color: 1;
-}
-
-.text-\[\#\]{
-  color: #;
-}
-
-.text-\[\#000000\]{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.text-\[\#00000080\]{
-  color: #00000080;
-}
-
-.text-\[\]{
-  color: ;
-}
-
-.text-\[\#33333375\]{
-  color: #33333375;
-}
-
-.text-\[\#00000075\]{
-  color: #00000075;
-}
-
->>>>>>> landing-page
 .underline{
   text-decoration-line: underline;
 }
@@ -1194,68 +921,24 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> landing-page
 .shadow-xl{
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-<<<<<<< HEAD
-=======
-.shadow-2xl{
-  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
->>>>>>> landing-page
 .outline{
   outline-style: solid;
 }
 
-<<<<<<< HEAD
-=======
-.outline-\[\]{
-  outline-width: ;
-}
-
-.outline-\[0\.5\]{
-  outline-width: 0.5;
-}
-
-.outline-\[0\.5px\]{
-  outline-width: 0.5px;
-}
-
->>>>>>> landing-page
 .outline-1{
   outline-width: 1px;
 }
 
-<<<<<<< HEAD
-=======
-.outline-0{
-  outline-width: 0px;
-}
-
-.outline-\[\#\]{
-  outline-color: #;
-}
-
->>>>>>> landing-page
 .outline-\[\#999999\]{
   outline-color: #999999;
 }
 
-<<<<<<< HEAD
->>>>>>> Stashed changes
-=======
->>>>>>> landing-page
 .searchbar-container {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -1307,23 +990,10 @@ video {
 }
 
 @media (min-width: 768px){
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-=======
-  .md\:-right-10{
-    right: -2.5rem;
-  }
-
->>>>>>> landing-page
   .md\:-right-12{
     right: -3rem;
   }
 
-<<<<<<< HEAD
->>>>>>> Stashed changes
-=======
->>>>>>> landing-page
   .md\:col-span-2{
     grid-column: span 2 / span 2;
   }
@@ -1341,22 +1011,12 @@ video {
     display: grid;
   }
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
   .md\:max-w-\[600px\]{
     max-width: 600px;
   }
 
->>>>>>> Stashed changes
-=======
->>>>>>> landing-page
   .md\:max-w-\[700px\]{
     max-width: 700px;
-  }
-
-  .md\:max-w-\[600px\]{
-    max-width: 600px;
   }
 
   .md\:grid-cols-3{
@@ -1380,27 +1040,16 @@ video {
     padding-right: 5rem;
   }
 
-<<<<<<< Updated upstream
-=======
   .md\:px-6{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
 
->>>>>>> Stashed changes
   .md\:py-0{
     padding-top: 0px;
     padding-bottom: 0px;
   }
 
-<<<<<<< HEAD
-=======
-  .md\:px-6{
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
->>>>>>> landing-page
   .md\:pb-2{
     padding-bottom: 0.5rem;
   }
