@@ -544,8 +544,8 @@ video {
   left: 50%;
 }
 
-.right-0{
-  right: 0px;
+.right-10{
+  right: 2.5rem;
 }
 
 .top-0{
@@ -554,10 +554,6 @@ video {
 
 .top-12{
   top: 3rem;
-}
-
-.right-10{
-  right: 2.5rem;
 }
 
 .-z-1{
@@ -917,10 +913,6 @@ video {
   padding-top: 2rem;
 }
 
-.pr-20{
-  padding-right: 5rem;
-}
-
 .text-center{
   text-align: center;
 }
@@ -1231,14 +1223,6 @@ video {
 }
 
 @media (min-width: 768px){
-  .md\:-right-12{
-    right: -3rem;
-  }
-
-  .md\:right-10{
-    right: 2.5rem;
-  }
-
   .md\:right-12{
     right: 3rem;
   }
