@@ -524,12 +524,20 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed{
+  position: fixed;
+}
+
 .absolute{
   position: absolute;
 }
 
 .relative{
   position: relative;
+}
+
+.sticky{
+  position: sticky;
 }
 
 .left-1\/2{
@@ -548,12 +556,20 @@ video {
   top: 3rem;
 }
 
+.right-10{
+  right: 2.5rem;
+}
+
 .-z-1{
   z-index: -1;
 }
 
 .z-40{
   z-index: 40;
+}
+
+.z-50{
+  z-index: 50;
 }
 
 .col-span-4{
@@ -608,6 +624,10 @@ video {
 
 .grid{
   display: grid;
+}
+
+.hidden{
+  display: none;
 }
 
 .h-1{
@@ -877,6 +897,10 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.pt-1{
+  padding-top: 0.25rem;
+}
+
 .pt-3{
   padding-top: 0.75rem;
 }
@@ -891,6 +915,10 @@ video {
 
 .pt-8{
   padding-top: 2rem;
+}
+
+.pr-20{
+  padding-right: 5rem;
 }
 
 .text-center{
@@ -1207,6 +1235,14 @@ video {
     right: -3rem;
   }
 
+  .md\:right-10{
+    right: 2.5rem;
+  }
+
+  .md\:right-12{
+    right: 3rem;
+  }
+
   .md\:col-span-2{
     grid-column: span 2 / span 2;
   }
@@ -1281,6 +1317,10 @@ video {
 
   .md\:pb-2{
     padding-bottom: 0.5rem;
+  }
+
+  .md\:pr-20{
+    padding-right: 5rem;
   }
 
   .md\:text-4xl{
