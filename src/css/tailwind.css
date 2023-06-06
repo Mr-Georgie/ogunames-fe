@@ -607,12 +607,36 @@ video {
   margin-top: 5rem;
 }
 
+.mt-28{
+  margin-top: 7rem;
+}
+
 .mt-4{
   margin-top: 1rem;
 }
 
 .mt-8{
   margin-top: 2rem;
+}
+
+.mb-28{
+  margin-bottom: 7rem;
+}
+
+.mb-36{
+  margin-bottom: 9rem;
+}
+
+.mb-72{
+  margin-bottom: 18rem;
+}
+
+.mt-72{
+  margin-top: 18rem;
+}
+
+.mt-52{
+  margin-top: 13rem;
 }
 
 .block{
@@ -1142,10 +1166,6 @@ video {
 
 .duration-300{
   transition-duration: 300ms;
-}
-
-.duration-700{
-  transition-duration: 700ms;
 }
 
 .ease-in-out{
