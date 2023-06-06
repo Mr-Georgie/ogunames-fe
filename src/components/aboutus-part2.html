@@ -14,7 +14,7 @@
       <!-- top - should disappear on scroll -->
       <div
         id="sticky"
-        class="py-4 gap-4 border-b px-4 flex flex-col items-center border-slate-100 md:px-20 md:grid md:grid-cols-3"
+        class="py-4 gap-4 border-b px-4 flex flex-col items-center border-slate-100 transition delay-700 duration-300 ease-in-out md:px-20 md:grid md:grid-cols-3"
       >
         <div class="md:col-span-2">
           <div class="flex gap-4">
@@ -89,7 +89,10 @@
         </div>
       </div>
       <!-- bottom - should be fixed on scroll -->
-      <div id="fixed" class="bg-white w-full z-50">
+      <div
+        id="fixed"
+        class="bg-white w-full z-50 transition delay-700 duration-300 ease-in-out"
+      >
         <div
           id=""
           class="bg-white pt-1 gap-2 px-6 md:grid md:grid-cols-8 md:px-20 md:items-center"
@@ -199,7 +202,7 @@
     </nav>
 
     <section
-      class="flex flex-col px-4 pt-6 md:grid md:grid-cols-4 md:px-20 md:gap-6"
+      class="flex flex-col px-4 pt-6 mt-20 md:grid md:grid-cols-4 md:px-20 md:gap-6"
     >
       <div class="md:col-span-2">
         <h1
