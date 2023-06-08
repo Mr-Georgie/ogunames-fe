@@ -556,6 +556,30 @@ video {
   top: 3rem;
 }
 
+.right-12{
+  right: 3rem;
+}
+
+.right-16{
+  right: 4rem;
+}
+
+.right-20{
+  right: 5rem;
+}
+
+.right-8{
+  right: 2rem;
+}
+
+.right-4{
+  right: 1rem;
+}
+
+.right-6{
+  right: 1.5rem;
+}
+
 .-z-1{
   z-index: -1;
 }
@@ -599,6 +623,10 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.ml-10{
+  margin-left: 2.5rem;
+}
+
 .mt-2{
   margin-top: 0.5rem;
 }
@@ -617,6 +645,10 @@ video {
 
 .mt-8{
   margin-top: 2rem;
+}
+
+.mt-16{
+  margin-top: 4rem;
 }
 
 .block{
@@ -697,6 +729,10 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-\[300px\]{
+  width: 300px;
 }
 
 .grow{
@@ -846,6 +882,15 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#3A3A3A\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(58 58 58 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#3A3A3A40\]{
+  background-color: #3A3A3A40;
+}
+
 .p-2{
   padding: 0.5rem;
 }
@@ -932,6 +977,10 @@ video {
 
 .pt-8{
   padding-top: 2rem;
+}
+
+.pt-16{
+  padding-top: 4rem;
 }
 
 .text-center{
@@ -1090,6 +1139,15 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\]{
+  color: ;
+}
+
+.text-\[\#F7F7F7\]{
+  --tw-text-opacity: 1;
+  color: rgb(247 247 247 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -1258,22 +1316,17 @@ video {
   outline-offset: 2px;
 }
 
-:is(.dark .dark\:border-\[\]){
-  border-color: ;
+:is(.dark .dark\:z-10){
+  z-index: 10;
 }
 
-:is(.dark .dark\:border-\[CBCBCB\]){
-  border-color: CBCBCB;
+:is(.dark .dark\:-z-1){
+  z-index: -1;
 }
 
 :is(.dark .dark\:border-\[\#CBCBCB\]){
   --tw-border-opacity: 1;
   border-color: rgb(203 203 203 / var(--tw-border-opacity));
-}
-
-:is(.dark .dark\:border-\[blue\]){
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 255 / var(--tw-border-opacity));
 }
 
 :is(.dark .dark\:bg-\[\#333333\]){
@@ -1289,6 +1342,18 @@ video {
 :is(.dark .dark\:bg-black){
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:bg-\[\]){
+  background-color: ;
+}
+
+:is(.dark .dark\:bg-\[\#\]){
+  background-color: #;
+}
+
+:is(.dark .dark\:bg-transparent){
+  background-color: transparent;
 }
 
 :is(.dark .dark\:text-\[\#999999\]){
@@ -1308,6 +1373,47 @@ video {
 :is(.dark .dark\:text-\[\#f7f7f7\]){
   --tw-text-opacity: 1;
   color: rgb(247 247 247 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:text-\[\#\]){
+  color: #;
+}
+
+:is(.dark .dark\:text-white){
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:text-gray-600){
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:shadow){
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+:is(.dark .dark\:shadow-md){
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+:is(.dark .dark\:shadow-\[\]){
+  --tw-shadow-color: ;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+:is(.dark .dark\:shadow-inherit){
+  --tw-shadow-color: inherit;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+:is(.dark .dark\:shadow-\[\#90A4AE\]){
+  --tw-shadow-color: #90A4AE;
+  --tw-shadow: var(--tw-shadow-colored);
 }
 
 @media (min-width: 640px){
@@ -1373,6 +1479,16 @@ video {
     margin-bottom: 1.25rem;
   }
 
+  .md\:my-8{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .md\:my-12{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
   .md\:-mt-4{
     margin-top: -1rem;
   }
@@ -1391,6 +1507,18 @@ video {
 
   .md\:max-w-\[700px\]{
     max-width: 700px;
+  }
+
+  .md\:max-w-\[560px\]{
+    max-width: 560px;
+  }
+
+  .md\:max-w-\[550px\]{
+    max-width: 550px;
+  }
+
+  .md\:max-w-\[500px\]{
+    max-width: 500px;
   }
 
   .md\:grid-cols-3{
