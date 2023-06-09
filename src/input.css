@@ -27,3 +27,7 @@
 .overview-icon{
   @apply h-8 w-8 rounded-full bg-orange-200 flex justify-center items-center
 }
+
+.card-heading{
+  @apply text-xs text-primary-text-color font-extrabold border-solid border-b-[0.8px] border-hr-grey-1 px-[26px] py-[14px]
+}
