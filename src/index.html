@@ -11,11 +11,11 @@
   </head>
   <body class="font-inter">
     <!-- navbar -->
-    <nav class="">
+    <nav class="shadow relative">
       <!-- top -->
       <div
         id="sticky"
-        class="py-4 gap-4 border-b px-4 flex flex-col items-center border-slate-100 md:px-20 md:grid md:grid-cols-3"
+        class="py-4 gap-4 border-b px-4 flex flex-col items-center border-slate-100 transition delay-700 duration-300 ease-in-out md:px-20 md:grid md:grid-cols-3"
       >
         <div class="md:col-span-2">
           <div class="flex gap-4">
@@ -90,7 +90,10 @@
         </div>
       </div>
       <!-- bottom - should be fixed on scroll -->
-      <div id="fixed" class="bg-white w-full z-50">
+      <div
+        id="fixed"
+        class="bg-white w-full z-50 transition delay-700 duration-300 ease-in-out"
+      >
         <div class="pt-4 gap-2 px-4 md:px-20 md:items-center">
           <div class="pb-4 flex justify-between items-center">
             <div class="cursor-pointer">
@@ -112,7 +115,10 @@
       </div>
     </nav>
 
-    <div class="relative flex items-center justify-end md:right-12">
+    <div
+      id="top-content"
+      class="relative flex items-center justify-end mt-20 md:right-12"
+    >
       <div
         class="flex items-center gap-4 rounded-full py-2 px-4 bg-[#F59A17] text-white"
       >
