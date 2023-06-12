@@ -584,6 +584,14 @@ video {
   grid-column: span 4 / span 4;
 }
 
+.mx-4{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .my-2{
@@ -640,12 +648,12 @@ video {
   margin-top: 5rem;
 }
 
-.mt-28{
-  margin-top: 7rem;
-}
-
 .mt-4{
   margin-top: 1rem;
+}
+
+.mt-52{
+  margin-top: 13rem;
 }
 
 .mt-7{
@@ -654,26 +662,6 @@ video {
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.mb-28{
-  margin-bottom: 7rem;
-}
-
-.mb-36{
-  margin-bottom: 9rem;
-}
-
-.mb-72{
-  margin-bottom: 18rem;
-}
-
-.mt-72{
-  margin-top: 18rem;
-}
-
-.mt-52{
-  margin-top: 13rem;
 }
 
 .block{
@@ -710,6 +698,10 @@ video {
 
 .h-6{
   height: 1.5rem;
+}
+
+.h-8{
+  height: 2rem;
 }
 
 .h-9{
@@ -1576,6 +1568,41 @@ video {
 }
 
 @media (min-width: 640px){
+  .sm\:col-span-4{
+    grid-column: span 4 / span 4;
+  }
+
+  .sm\:my-3{
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .sm\:grid{
+    display: grid;
+  }
+
+  .sm\:max-w-\[380px\]{
+    max-width: 380px;
+  }
+
+  .sm\:grid-cols-5{
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .sm\:flex-row{
+    flex-direction: row;
+  }
+
+  .sm\:items-stretch{
+    align-items: stretch;
+  }
+
+  .sm\:gap-0{
+    gap: 0px;
+  }
+
+  .sm\:gap-5{
+    gap: 1.25rem;
   }
 
   .sm\:border-l{
