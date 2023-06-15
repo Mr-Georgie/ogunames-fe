@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/tailwind.css" />
+
+    <title>OguName.com</title>
+    <script>
+      function checkDark() {
+        if (localStorage.theme === 'dark') {
+          document.documentElement.classList.add('dark')
+        } else {
+          document.documentElement.classList.remove('dark')
+        }
+      }
+    </script>
+  </head>
+  <body class="font-inter dark:bg-black text-[#333333] dark:text-[#F7F7F7]">
+    <!-- navbar -->
+    <nav class="shadow relative dark:shadow dark:shadow-[#90A4AE]">
+      <!-- top - should disappear on scroll -->
+      <div
+        id="sticky"
+        class="py-4 gap-4 border-b px-4 flex flex-col items-center border-slate-100 dark:border-[#CBCBCB] md:px-20 md:grid md:grid-cols-3"
+      >
+        <div class="md:col-span-2">
+          <div class="flex gap-4">
+            <div class="flex gap-2">
+              <img src="../images/darkMail.png" alt="dark mode mail">
+              <div class="flex flex-col">
+                <span class="font-extrabold text-base uppercase">Email</span>
+                <span class="font-semibold text-xs">team@oguname.com</span>
+              </div>
+            </div>
+            <div class="flex gap-2">
+              <img src="../images/darkPhone.png" alt="dark mode phone">
+              <div class="flex flex-col">
+                <span class="font-extrabold text-base uppercase">Phone</span>
+                <span class="font-semibold text-xs"
+                  >0705 369 5974, 0907 897 5478</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-end py-2 md:py-0">
+          <div
+            class="flex items-center gap-8 sm:border-l sm:border-orange-500 px-3"
+          >
+            <div class="">
+              <img src="../images/darkTwitter.png" alt="dark twitter" class="w-6 cursor-pointer hover:text-slate-500" />
+            </div>
+            <div class="">
+              <img src="../images/darkFacebook.png" alt="dark facebook" class="w-6 cursor-pointer hover:text-slate-500" />
+            </div>
+            <div class="">
+              <img src="../images/darkInstagram.png" alt="dark instagram" class="w-6 cursor-pointer hover:text-slate-500" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- bottom - should be fixed on scroll -->
+      <div id="fixed" class="bg-white dark:bg-black text-[#333333] dark:text-[#F7F7F7] w-full z-50">
+        <div
+          id=""
+          class="bg-white dark:bg-black text-[#333333] dark:text-[#F7F7F7] pt-1 gap-2 px-6 md:grid md:grid-cols-8 md:px-20 md:items-center"
+        >
+          <div class="md:col-span-2">
+            <div class="cursor-pointer">
+              <img src="../images/darkLogo.png" alt="OguName Logo" class="h-[71px]" />
+            </div>
+          </div>
+          <div class="col-span-4">
+            <div
+              class="searchbar-container grow flex px-4 items-center border rounded-3xl dark:bg-[#3A3A3A] dark:text-[#999999]"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <input
+                type="text"
+                name=""
+                class="focus:outline-none p-3 focus:bg-white dark:bg-[#3A3A3A] dark:text-[#999999] placeholder:text-xs w-full"
+                placeholder="Type any Gun name here and press enter"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex items-center gap-6 justify-center py-4 text-xs md:text-sm md:pb-2 lg:gap-8 font-bold"
+        >
+          <div
+            class="flex items-center gap-2 cursor-pointer hover:text-slate-500"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-4 h-4"
+            >
+              <path
+                d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z"
+              />
+              <path
+                d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z"
+              />
+            </svg>
+            <span>Home</span>
+          </div>
+          <div
+            class="flex items-center gap-2 cursor-pointer hover:text-slate-500"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-4 h-4"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97zM6.75 8.25a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H7.5z"
+                clip-rule="evenodd"
+              />
+            </svg>
+
+            <span>About Us</span>
+          </div>
+          <div
+            class="flex items-center gap-2 cursor-pointer hover:text-slate-500"
+          >
+            <img src="../images/donate.png" alt="donate" class="w-4" />
+            <span>Donate</span>
+          </div>
+          <div
+            class="flex items-center gap-2 cursor-pointer hover:text-slate-500"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-4 h-4"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.125 3C3.089 3 2.25 3.84 2.25 4.875V18a3 3 0 003 3h15a3 3 0 01-3-3V4.875C17.25 3.839 16.41 3 15.375 3H4.125zM12 9.75a.75.75 0 000 1.5h1.5a.75.75 0 000-1.5H12zm-.75-2.25a.75.75 0 01.75-.75h1.5a.75.75 0 010 1.5H12a.75.75 0 01-.75-.75zM6 12.75a.75.75 0 000 1.5h7.5a.75.75 0 000-1.5H6zm-.75 3.75a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5H6a.75.75 0 01-.75-.75zM6 6.75a.75.75 0 00-.75.75v3c0 .414.336.75.75.75h3a.75.75 0 00.75-.75v-3A.75.75 0 009 6.75H6z"
+                clip-rule="evenodd"
+              />
+              <path
+                d="M18.75 6.75h1.875c.621 0 1.125.504 1.125 1.125V18a1.5 1.5 0 01-3 0V6.75z"
+              />
+            </svg>
+
+            <span>Blog</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <div id="top-content" class="mt-8 pt-8 px-4 md:px-20">
+      <h2 class="font-bold text-xl">Submit a New Name</h2>
+
+      <!-- Submit button -->
+      <div class="mb-4 relative">
+        <div
+          class="absolute left-1/2 z-40 uppercase text-white bg-custom-orange font-extrabold py-3 rounded-md box-shadow px-4 text-xs"
+        >
+          Name submitted. We'll review and get back to you
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="md:grid md:grid-cols-5">
+        <form class="md:col-span-2 overflow-hidden flex flex-col gap-4">
+          <!-- input field -->
+          <div>
+            <span class="flex justify-end text-custom-orange italic"
+              >required</span
+            >
+            <div
+              class="outline outline-0 rounded-md relative border-2 focus-within:border-custom-orange mt-2"
+            >
+              <input
+                type="text"
+                name="name"
+                placeholder=" "
+                class="block p-4 w-full text-lg appearance-none dark:text-white focus:outline-none bg-transparent"
+              />
+              <label
+                for="name"
+                class="absolute top-0 bg-white dark:bg-black dark:text-white p-4 -z-1 duration-300 origin-0 text-slate-500"
+                >Name to be submitted</label
+              >
+            </div>
+          </div>
+
+          <!-- input field -->
+          <div>
+            <span class="flex justify-end text-custom-orange italic"
+              >required</span
+            >
+            <div
+              class="outline outline-0 rounded-md relative border-2 focus-within:border-custom-orange mt-2"
+            >
+              <input
+                type="text"
+                name="meaning"
+                placeholder=" "
+                class="block p-4 w-full text-lg appearance-none dark:text-white focus:outline-none bg-transparent"
+              />
+              <label
+                for="meaning"
+                class="absolute top-0 bg-white dark:bg-black dark:text-white p-4 -z-1 duration-300 origin-0 text-slate-500"
+                >If you know please tell us the meaning of the name</label
+              >
+            </div>
+          </div>
+
+          <!-- select field -->
+          <div>
+            <span class="flex justify-end text-custom-orange italic">optional</span>
+            <div
+              class="outline outline-0 rounded-md relative border-2 focus-within:border-custom-orange mt-2"
+            >
+              <select
+                name="location"
+                id="location"
+                class="block p-4 w-full text-lg appearance-none dark:text-gray-600 focus:outline-none bg-transparent"
+              >
+                <option disabled selected>-- select an option --</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </select>
+              <label
+                for="location"
+                class="absolute top-0 bg-white dark:bg-black dark:text-white p-4 -z-1 duration-300 origin-0 text-slate-500"
+                >Where did you hear the given name</label
+              >
+            </div>
+          </div>
+
+          <!-- input field -->
+          <div>
+            <span class="flex justify-end text-custom-orange italic"
+              >required</span
+            >
+            <div
+              class="outline outline-0 rounded-md relative border-2 focus-within:border-custom-orange mt-2"
+            >
+              <input
+                type="email"
+                name="email"
+                placeholder=" "
+                class="block p-4 w-full text-lg appearance-none dark:text-white focus:outline-none bg-transparent"
+              />
+              <label
+                for="email"
+                class="absolute top-0 bg-white dark:bg-black dark:text-white p-4 -z-1 duration-300 origin-0 text-slate-500"
+                >Email to send confirmation of the new name submitted</label
+              >
+            </div>
+          </div>
+
+          <!-- Submit button -->
+          <div class="w-full my-6">
+            <button
+              class="uppercase text-white bg-custom-orange w-full font-extrabold py-6 rounded-md box-shadow hover:bg-hover-orange"
+            >
+              Submit new name
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[#F7F7F7] dark:bg-[#333333] pb-10 pt-6 px-4 md:px-20 mt-20">
+      <p class="text-[16px] text-center text-[#33333380] dark:text-[#f7f7f7] font-bold">
+        Our Key Supporters
+      </p>
+      <div class="flex items-center md:my-12 my-2 md:gap-16 gap-4">
+        <div class="flex flex-col items-center">
+          <img src="../images/darkFooterLogo1.png" alt="">
+          <span class="md:text-[14px] text-[10px] text-[#333333] dark:text-[#f7f7f7] font-extrabold">ELECTRONS-BOOK</span>
+        </div>
+        <img src="../images/darkFooterLogo2.png" alt="">
+      </div>
+      <div class="flex items-center w-full">
+        <div class="h-1 bg-white w-full"></div>
+        <p class="md:text-[12px] text-[8px] text-[#999999] dark:text-[#F7F7F7] font-normal text-center w-full">
+          2023 oguname.com. All rights reserved
+        </p>
+        <div class="h-1 bg-white w-full"></div>
+      </div>
+    </footer>
+
+    <script src="../js/index.js"></script>
+  </body>
+</html>
