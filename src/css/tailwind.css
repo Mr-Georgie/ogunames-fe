@@ -540,12 +540,20 @@ video {
   position: sticky;
 }
 
+.left-0{
+  left: 0px;
+}
+
 .left-1\/2{
   left: 50%;
 }
 
 .left-4{
   left: 1rem;
+}
+
+.right-0{
+  right: 0px;
 }
 
 .right-10{
@@ -568,24 +576,8 @@ video {
   top: 172px;
 }
 
-.top-64{
-  top: 16rem;
-}
-
 .top-\[319px\]{
   top: 319px;
-}
-
-.top-\[320px\]{
-  top: 320px;
-}
-
-.left-0{
-  left: 0px;
-}
-
-.right-0{
-  right: 0px;
 }
 
 .-z-1{
@@ -768,6 +760,14 @@ video {
   height: 75px;
 }
 
+.h-screen{
+  height: 100vh;
+}
+
+.h-full{
+  height: 100%;
+}
+
 .w-1\/4{
   width: 25%;
 }
@@ -846,6 +846,10 @@ video {
 
 .max-w-\[200px\]{
   max-width: 200px;
+}
+
+.flex-1{
+  flex: 1 1 0%;
 }
 
 .flex-auto{
@@ -1052,10 +1056,6 @@ video {
   border-radius: 0.375rem;
 }
 
-.rounded-none{
-  border-radius: 0px;
-}
-
 .rounded-xl{
   border-radius: 0.75rem;
 }
@@ -1180,6 +1180,11 @@ video {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f3f3f3\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 243 243 / var(--tw-bg-opacity));
 }
 
 .p-2{
@@ -1851,8 +1856,24 @@ video {
 }
 
 @media (min-width: 768px){
+  .md\:static{
+    position: static;
+  }
+
+  .md\:left-auto{
+    left: auto;
+  }
+
   .md\:right-12{
     right: 3rem;
+  }
+
+  .md\:right-auto{
+    right: auto;
+  }
+
+  .md\:top-auto{
+    top: auto;
   }
 
   .md\:col-span-2{
@@ -1929,6 +1950,10 @@ video {
     width: 91%;
   }
 
+  .md\:max-w-\[267px\]{
+    max-width: 267px;
+  }
+
   .md\:max-w-\[548px\]{
     max-width: 548px;
   }
@@ -1969,6 +1994,10 @@ video {
     grid-template-rows: repeat(1, minmax(0, 1fr));
   }
 
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
   .md\:items-center{
     align-items: center;
   }
@@ -1984,11 +2013,6 @@ video {
   .md\:gap-x-11{
     -moz-column-gap: 2.75rem;
          column-gap: 2.75rem;
-  }
-
-  .md\:gap-x-\[10px\]{
-    -moz-column-gap: 10px;
-         column-gap: 10px;
   }
 
   .md\:gap-x-\[7px\]{
@@ -2122,6 +2146,12 @@ video {
   .md\:leading-6{
     line-height: 1.5rem;
   }
+
+  .md\:shadow-none{
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
 }
 
 @media (min-width: 1024px){
@@ -2166,7 +2196,19 @@ video {
   }
 }
 
+.\[\&\>\*\:nth-child\(even\)\]\:cursor-pointer>*:nth-child(even){
+  cursor: pointer;
+}
+
 .\[\&\>\*\:nth-child\(even\)\]\:bg-white>*:nth-child(even){
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.\[\&\>\*\]\:cursor-pointer>*{
+  cursor: pointer;
+}
+
+.\[\&\>li\]\:cursor-pointer>li{
+  cursor: pointer;
 }

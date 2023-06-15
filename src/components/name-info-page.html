@@ -6,9 +6,11 @@
     <link rel="stylesheet" href="../css/tailwind.css" />
     <title>Name Info Page</title>
   </head>
-  <body>
-    <main class="font-inter min-w-[390px] relative">
-      <section class="bg-basic-grey text-[#0a0a0acc]">
+  <body class="h-screen">
+    <main
+      class="font-inter min-w-[390px] relative md:static flex flex-col md:flex-row bg-[#f3f3f3]"
+    >
+      <section class="bg-basic-grey text-[#0a0a0acc] w-full md:max-w-[267px]">
         <div
           class="flex flex-col bg-[#f7f7f7] border-solid border-b border-[#999999] px-[10px] py-2"
         >
@@ -123,7 +125,7 @@
         <div>
           <!--names section-->
           <ul
-            class="list-none [&>*:nth-child(even)]:bg-white capitalize text-sm leading-5 names"
+            class="list-none [&>*:nth-child(even)]:bg-white [&>li]:cursor-pointer capitalize text-sm leading-5 names"
           >
             <li class="first:text-[#278DE1]">adande</li>
             <li>aduje</li>
@@ -131,7 +133,7 @@
             <li>adokun</li>
             <li>mauyol</li>
             <li>sesede</li>
-            <li>movivi</li>
+            <li>mauvivi</li>
             <li>senapon</li>
             <li>sesi</li>
             <li>adome</li>
@@ -150,7 +152,7 @@
       </section>
       <!--name info section-->
       <article
-        class="bg-[#f7f7f7] border-solid border border-white px-3 md:px-9 absolute top-[319px] left-0 right-0 shadow-primary rounded-t-[10px] md:rounded-none"
+        class="bg-[#f7f7f7] border-solid border border-white px-3 md:px-9 absolute md:static top-[319px] md:top-auto left-0 md:left-auto right-0 md:right-auto shadow-primary md:shadow-none rounded-t-[10px] md:rounded-none flex-1"
       >
         <!--names info top-->
         <div
