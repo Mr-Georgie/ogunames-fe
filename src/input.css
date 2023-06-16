@@ -29,5 +29,13 @@
 }
 
 .card-heading{
-  @apply text-xs text-primary-text-color font-extrabold border-solid border-b-[0.8px] border-hr-grey-1 px-[26px] py-[14px]
+  @apply text-xs text-primary-text-color font-extrabold border-solid border-b-[0.8px] border-hr-grey-1 px-[26px] py-[14px];
+}
+
+.names > li{
+  @apply p-[7.5px] pl-[9px] text-sm font-semibold
+}
+
+.info-page-edit-icon{
+  @apply h-[14px] w-[14px] md:h-4 md:w-4
 }
