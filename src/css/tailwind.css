@@ -768,12 +768,12 @@ video {
   height: 75px;
 }
 
-.h-screen{
-  height: 100vh;
-}
-
 .h-full{
   height: 100%;
+}
+
+.h-screen{
+  height: 100vh;
 }
 
 .w-1\/4{
@@ -1117,6 +1117,11 @@ video {
   border-color: rgb(226 232 240 / var(--tw-border-opacity));
 }
 
+.border-white{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
 .bg-\[\#3A3A3A\]{
   --tw-bg-opacity: 1;
   background-color: rgb(58 58 58 / var(--tw-bg-opacity));
@@ -1150,6 +1155,11 @@ video {
 .bg-\[\#cccccc\]{
   --tw-bg-opacity: 1;
   background-color: rgb(204 204 204 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f3f3f3\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 243 243 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#f7f7f7\]{
@@ -1188,11 +1198,6 @@ video {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#f3f3f3\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 243 243 / var(--tw-bg-opacity));
 }
 
 .p-2{
@@ -2274,17 +2279,9 @@ video {
   }
 }
 
-.\[\&\>\*\:nth-child\(even\)\]\:cursor-pointer>*:nth-child(even){
-  cursor: pointer;
-}
-
 .\[\&\>\*\:nth-child\(even\)\]\:bg-white>*:nth-child(even){
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.\[\&\>\*\]\:cursor-pointer>*{
-  cursor: pointer;
 }
 
 .\[\&\>li\]\:cursor-pointer>li{
