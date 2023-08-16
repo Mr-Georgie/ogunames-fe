@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/tailwind.css" />
+    <title>Page Wrapper</title>
+  </head>
+  <body class="h-screen overflow-hidden">
+    <!--page wrapper-->
+    <div class="flex flex-col min-w-[390px]">
+      <!--top nav warpper-->
+      <header
+        class="flex flex-row justify-between items-center h-[66px] bg-basic-grey"
+      >
+        <!--Logo-->
+        <div class="lg:w-[267px] pl-[14px] lg:pl-[23px] mr-[11px] lg:mr-0">
+          <img
+            src="../images/logo.png"
+            alt="app logo"
+            class="w-[100px] md:w-[150px] h-[37px] md:h-14"
+          />
+        </div>
+        <!--Nav items-->
+        <nav class="flex flex-row justify-between items-end flex-1">
+          <button
+            class="w-[35px] h-[29px] bg-custom-orange flex items-center justify-center rounded-[5px]"
+          >
+            <svg
+              width="17"
+              height="15"
+              viewBox="0 0 17 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0.25 13.5C0.25 13.3011 0.329018 13.1103 0.46967 12.9697C0.610322 12.829 0.801088 12.75 1 12.75H16C16.1989 12.75 16.3897 12.829 16.5303 12.9697C16.671 13.1103 16.75 13.3011 16.75 13.5C16.75 13.6989 16.671 13.8897 16.5303 14.0303C16.3897 14.171 16.1989 14.25 16 14.25H1C0.801088 14.25 0.610322 14.171 0.46967 14.0303C0.329018 13.8897 0.25 13.6989 0.25 13.5ZM0.25 7.5C0.25 7.30109 0.329018 7.11032 0.46967 6.96967C0.610322 6.82902 0.801088 6.75 1 6.75H16C16.1989 6.75 16.3897 6.82902 16.5303 6.96967C16.671 7.11032 16.75 7.30109 16.75 7.5C16.75 7.69891 16.671 7.88968 16.5303 8.03033C16.3897 8.17098 16.1989 8.25 16 8.25H1C0.801088 8.25 0.610322 8.17098 0.46967 8.03033C0.329018 7.88968 0.25 7.69891 0.25 7.5ZM0.25 1.5C0.25 1.30109 0.329018 1.11032 0.46967 0.96967C0.610322 0.829018 0.801088 0.75 1 0.75H16C16.1989 0.75 16.3897 0.829018 16.5303 0.96967C16.671 1.11032 16.75 1.30109 16.75 1.5C16.75 1.69891 16.671 1.88968 16.5303 2.03033C16.3897 2.17098 16.1989 2.25 16 2.25H1C0.801088 2.25 0.610322 2.17098 0.46967 2.03033C0.329018 1.88968 0.25 1.69891 0.25 1.5Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+          <div class="flex items-end gap-[15px] pr-[15px]">
+            <!--notification icon-->
+            <div class="relative flex items-end">
+              <span
+                class="w-[19px] h-[19px] rounded-full bg-[#E04646] absolute top-[-16px] left-3 flex items- justify-center text-xs text-white font-black"
+                >9+</span
+              >
+              <button class="flex items-end justify-center self-end">
+                <svg
+                  width="20"
+                  height="23"
+                  viewBox="0 0 20 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.5303 14.4697L17.5 12.4395V9.75C17.4977 7.89138 16.8063 6.09964 15.5595 4.72124C14.3127 3.34284 12.5991 2.4757 10.75 2.2875V0.75H9.25V2.2875C7.40093 2.4757 5.68732 3.34284 4.44053 4.72124C3.19373 6.09964 2.50233 7.89138 2.5 9.75V12.4395L0.46975 14.4697C0.329088 14.6104 0.250042 14.8011 0.25 15V17.25C0.25 17.4489 0.329018 17.6397 0.46967 17.7803C0.610322 17.921 0.801088 18 1 18H6.25V18.5828C6.23369 19.5342 6.56905 20.4583 7.19184 21.1778C7.81462 21.8973 8.68102 22.3617 9.625 22.482C10.1464 22.5337 10.6728 22.4757 11.1704 22.3117C11.6681 22.1478 12.1259 21.8815 12.5144 21.53C12.9029 21.1785 13.2136 20.7495 13.4264 20.2707C13.6392 19.792 13.7494 19.2739 13.75 18.75V18H19C19.1989 18 19.3897 17.921 19.5303 17.7803C19.671 17.6397 19.75 17.4489 19.75 17.25V15C19.75 14.8011 19.6709 14.6104 19.5303 14.4697ZM12.25 18.75C12.25 19.3467 12.0129 19.919 11.591 20.341C11.169 20.7629 10.5967 21 10 21C9.40326 21 8.83097 20.7629 8.40901 20.341C7.98705 19.919 7.75 19.3467 7.75 18.75V18H12.25V18.75ZM18.25 16.5H1.75V15.3105L3.78025 13.2803C3.92091 13.1396 3.99996 12.9489 4 12.75V9.75C4 8.1587 4.63214 6.63258 5.75736 5.50736C6.88258 4.38214 8.4087 3.75 10 3.75C11.5913 3.75 13.1174 4.38214 14.2426 5.50736C15.3679 6.63258 16 8.1587 16 9.75V12.75C16 12.9489 16.0791 13.1396 16.2197 13.2803L18.25 15.3105V16.5Z"
+                    fill="black"
+                  />
+                </svg>
+              </button>
+            </div>
+            <!--setting button-->
+            <button>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_710_964)">
+                  <path
+                    d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M19.4 15C19.2669 15.3016 19.2272 15.6362 19.286 15.9606C19.3448 16.285 19.4995 16.5843 19.73 16.82L19.79 16.88C19.976 17.0657 20.1235 17.2863 20.2241 17.5291C20.3248 17.7719 20.3766 18.0322 20.3766 18.295C20.3766 18.5578 20.3248 18.8181 20.2241 19.0609C20.1235 19.3037 19.976 19.5243 19.79 19.71C19.6043 19.896 19.3837 20.0435 19.1409 20.1441C18.8981 20.2448 18.6378 20.2966 18.375 20.2966C18.1122 20.2966 17.8519 20.2448 17.6091 20.1441C17.3663 20.0435 17.1457 19.896 16.96 19.71L16.9 19.65C16.6643 19.4195 16.365 19.2648 16.0406 19.206C15.7162 19.1472 15.3816 19.1869 15.08 19.32C14.7842 19.4468 14.532 19.6572 14.3543 19.9255C14.1766 20.1938 14.0813 20.5082 14.08 20.83V21C14.08 21.5304 13.8693 22.0391 13.4942 22.4142C13.1191 22.7893 12.6104 23 12.08 23C11.5496 23 11.0409 22.7893 10.6658 22.4142C10.2907 22.0391 10.08 21.5304 10.08 21V20.91C10.0723 20.579 9.96512 20.258 9.77251 19.9887C9.5799 19.7194 9.31074 19.5143 9 19.4C8.69838 19.2669 8.36381 19.2272 8.03941 19.286C7.71502 19.3448 7.41568 19.4995 7.18 19.73L7.12 19.79C6.93425 19.976 6.71368 20.1235 6.47088 20.2241C6.22808 20.3248 5.96783 20.3766 5.705 20.3766C5.44217 20.3766 5.18192 20.3248 4.93912 20.2241C4.69632 20.1235 4.47575 19.976 4.29 19.79C4.10405 19.6043 3.95653 19.3837 3.85588 19.1409C3.75523 18.8981 3.70343 18.6378 3.70343 18.375C3.70343 18.1122 3.75523 17.8519 3.85588 17.6091C3.95653 17.3663 4.10405 17.1457 4.29 16.96L4.35 16.9C4.58054 16.6643 4.73519 16.365 4.794 16.0406C4.85282 15.7162 4.81312 15.3816 4.68 15.08C4.55324 14.7842 4.34276 14.532 4.07447 14.3543C3.80618 14.1766 3.49179 14.0813 3.17 14.08H3C2.46957 14.08 1.96086 13.8693 1.58579 13.4942C1.21071 13.1191 1 12.6104 1 12.08C1 11.5496 1.21071 11.0409 1.58579 10.6658C1.96086 10.2907 2.46957 10.08 3 10.08H3.09C3.42099 10.0723 3.742 9.96512 4.0113 9.77251C4.28059 9.5799 4.48572 9.31074 4.6 9C4.73312 8.69838 4.77282 8.36381 4.714 8.03941C4.65519 7.71502 4.50054 7.41568 4.27 7.18L4.21 7.12C4.02405 6.93425 3.87653 6.71368 3.77588 6.47088C3.67523 6.22808 3.62343 5.96783 3.62343 5.705C3.62343 5.44217 3.67523 5.18192 3.77588 4.93912C3.87653 4.69632 4.02405 4.47575 4.21 4.29C4.39575 4.10405 4.61632 3.95653 4.85912 3.85588C5.10192 3.75523 5.36217 3.70343 5.625 3.70343C5.88783 3.70343 6.14808 3.75523 6.39088 3.85588C6.63368 3.95653 6.85425 4.10405 7.04 4.29L7.1 4.35C7.33568 4.58054 7.63502 4.73519 7.95941 4.794C8.28381 4.85282 8.61838 4.81312 8.92 4.68H9C9.29577 4.55324 9.54802 4.34276 9.72569 4.07447C9.90337 3.80618 9.99872 3.49179 10 3.17V3C10 2.46957 10.2107 1.96086 10.5858 1.58579C10.9609 1.21071 11.4696 1 12 1C12.5304 1 13.0391 1.21071 13.4142 1.58579C13.7893 1.96086 14 2.46957 14 3V3.09C14.0013 3.41179 14.0966 3.72618 14.2743 3.99447C14.452 4.26276 14.7042 4.47324 15 4.6C15.3016 4.73312 15.6362 4.77282 15.9606 4.714C16.285 4.65519 16.5843 4.50054 16.82 4.27L16.88 4.21C17.0657 4.02405 17.2863 3.87653 17.5291 3.77588C17.7719 3.67523 18.0322 3.62343 18.295 3.62343C18.5578 3.62343 18.8181 3.67523 19.0609 3.77588C19.3037 3.87653 19.5243 4.02405 19.71 4.21C19.896 4.39575 20.0435 4.61632 20.1441 4.85912C20.2448 5.10192 20.2966 5.36217 20.2966 5.625C20.2966 5.88783 20.2448 6.14808 20.1441 6.39088C20.0435 6.63368 19.896 6.85425 19.71 7.04L19.65 7.1C19.4195 7.33568 19.2648 7.63502 19.206 7.95941C19.1472 8.28381 19.1869 8.61838 19.32 8.92V9C19.4468 9.29577 19.6572 9.54802 19.9255 9.72569C20.1938 9.90337 20.5082 9.99872 20.83 10H21C21.5304 10 22.0391 10.2107 22.4142 10.5858C22.7893 10.9609 23 11.4696 23 12C23 12.5304 22.7893 13.0391 22.4142 13.4142C22.0391 13.7893 21.5304 14 21 14H20.91C20.5882 14.0013 20.2738 14.0966 20.0055 14.2743C19.7372 14.452 19.5268 14.7042 19.4 15V15Z"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_710_964">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+            <!--logout button-->
+            <button>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.1426 12H23.1426M23.1426 12L19.714 8.57141M23.1426 12L19.714 15.4286"
+                  stroke="black"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M20.0566 19.6971C18.5173 21.3016 16.5331 22.4089 14.3593 22.8765C12.1855 23.3441 9.92154 23.1507 7.85858 22.3211C5.79562 21.4915 4.02802 20.0637 2.78314 18.2214C1.53827 16.379 0.873047 14.2063 0.873047 11.9828C0.873047 9.75931 1.53827 7.58665 2.78314 5.74429C4.02802 3.90193 5.79562 2.47413 7.85858 1.64455C9.92154 0.814976 12.1855 0.621555 14.3593 1.08917C16.5331 1.55678 18.5173 2.66405 20.0566 4.26854"
+                  stroke="black"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </nav>
+      </header>
+      <!--side bar-->
+      <!--Main content-->
+      <div class="flex h-screen">
+        <div class="w-[267px] hidden lg:flex flex-col bg-basic-grey">
+          <div class="pt-[30px] px-[35px] mb-12">
+            <img
+              src="../images/james.png"
+              alt="profile picture"
+              class="w-[200px] h-[200px] rounded-full"
+            />
+            <div class="text-center mt-3">
+              <h4 class="capitalize text-xl leading-6 font-bold text-black">
+                akoteyon jesugo
+              </h4>
+              <span class="capitalize text-custom-orange text-xs font-bold mt-1"
+                >admin</span
+              >
+            </div>
+          </div>
+          <nav>
+            <ul class="list-none text-base font-normal capitalize">
+              <li>
+                <a href="#" class="py-3 px-[6px] flex items-center">
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21.1829 10.836L12.1267 1.78443L11.5196 1.1774C11.3813 1.04 11.1943 0.962891 10.9993 0.962891C10.8044 0.962891 10.6173 1.04 10.479 1.1774L0.815722 10.836C0.673998 10.9772 0.561991 11.1453 0.486313 11.3305C0.410635 11.5156 0.372819 11.7141 0.375097 11.9141C0.384472 12.7391 1.07119 13.3977 1.89619 13.3977H2.89228V21.0313H19.1063V13.3977H20.1235C20.5243 13.3977 20.9017 13.2407 21.1853 12.9571C21.3249 12.8179 21.4355 12.6524 21.5108 12.4701C21.586 12.2879 21.6243 12.0925 21.6235 11.8954C21.6235 11.4969 21.4665 11.1196 21.1829 10.836ZM12.3118 19.3438H9.68682V14.5626H12.3118V19.3438ZM17.4188 11.7102V19.3438H13.8118V14.0001C13.8118 13.4821 13.3923 13.0626 12.8743 13.0626H9.12432C8.60635 13.0626 8.18682 13.4821 8.18682 14.0001V19.3438H4.57978V11.7102H2.32978L11.0017 3.04537L11.5431 3.58678L19.6712 11.7102H17.4188Z"
+                      fill="black"
+                    />
+                  </svg>
+                  <span class="ml-5">dashboard</span>
+                </a>
+              </li>
+              <li class="bg-custom-orange">
+                <a href="#" class="py-3 px-[6px] flex items-center">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.0007 3.89999C15.2394 3.89999 15.4684 3.99482 15.6371 4.1636C15.8059 4.33238 15.9007 4.5613 15.9007 4.79999V10.3884C16.4851 9.88485 17.2294 9.60542 18.0007 9.59999C19.9891 9.59999 21.6007 11.4804 21.6007 13.8C21.6007 16.1196 19.9891 18 18.0007 18C17.2294 17.9946 16.4851 17.7151 15.9007 17.2116V17.4C15.9007 17.6387 15.8059 17.8676 15.6371 18.0364C15.4684 18.2052 15.2394 18.3 15.0007 18.3C14.762 18.3 14.5331 18.2052 14.3643 18.0364C14.1956 17.8676 14.1007 17.6387 14.1007 17.4V4.79999C14.1007 4.5613 14.1956 4.33238 14.3643 4.1636C14.5331 3.99482 14.762 3.89999 15.0007 3.89999ZM18.0007 16.2C18.7447 16.2 19.8007 15.396 19.8007 13.8C19.8007 12.204 18.7447 11.4 18.0007 11.4C17.2567 11.4 16.2007 12.204 16.2007 13.8C16.2007 15.396 17.2567 16.2 18.0007 16.2ZM7.79474 3.89999C7.97956 3.90259 8.1591 3.96203 8.30896 4.07024C8.45882 4.17845 8.57173 4.33017 8.63234 4.50479L13.0147 17.1048C13.0541 17.2166 13.071 17.3351 13.0645 17.4534C13.058 17.5718 13.0282 17.6877 12.9767 17.7945C12.9253 17.9013 12.8532 17.9968 12.7647 18.0757C12.6763 18.1546 12.5731 18.2152 12.4611 18.2541C12.3491 18.293 12.2306 18.3093 12.1122 18.3023C11.9939 18.2952 11.8781 18.2648 11.7716 18.2129C11.665 18.161 11.5698 18.0885 11.4913 17.9997C11.4129 17.9108 11.3527 17.8073 11.3143 17.6952L10.3771 15H4.87274L3.84074 17.7192C3.75202 17.9366 3.58183 18.1108 3.36648 18.2045C3.15113 18.2982 2.90769 18.304 2.68812 18.2207C2.46855 18.1374 2.29025 17.9715 2.19127 17.7585C2.09228 17.5456 2.08047 17.3024 2.15834 17.0808L6.93914 4.48079C7.00467 4.30796 7.12184 4.1595 7.2747 4.05559C7.42757 3.95168 7.60992 3.89735 7.79474 3.89999ZM5.55674 13.2H9.75074L7.74554 7.43399L5.55674 13.2Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <span class="ml-5">names list</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="py-3 px-[6px] flex items-center">
+                  <svg
+                    width="20"
+                    height="14"
+                    viewBox="0 0 20 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.75 9.5C13.5511 9.5 13.3603 9.57902 13.2197 9.71967C13.079 9.86032 13 10.0511 13 10.25C13 10.4489 13.079 10.6397 13.2197 10.7803C13.3603 10.921 13.5511 11 13.75 11H16.25C16.4489 11 16.6397 10.921 16.7803 10.7803C16.921 10.6397 17 10.4489 17 10.25C17 10.0511 16.921 9.86032 16.7803 9.71967C16.6397 9.57902 16.4489 9.5 16.25 9.5H13.75ZM2.75 0C2.02065 0 1.32118 0.289731 0.805456 0.805456C0.289731 1.32118 0 2.02065 0 2.75V11.25C0 11.9793 0.289731 12.6788 0.805456 13.1945C1.32118 13.7103 2.02065 14 2.75 14H17.25C17.9793 14 18.6788 13.7103 19.1945 13.1945C19.7103 12.6788 20 11.9793 20 11.25V2.75C20 2.02065 19.7103 1.32118 19.1945 0.805456C18.6788 0.289731 17.9793 0 17.25 0H2.75ZM1.5 11.25V6H18.5V11.25C18.5 11.94 17.94 12.5 17.25 12.5H2.75C2.06 12.5 1.5 11.94 1.5 11.25ZM1.5 4.5V2.75C1.5 2.06 2.06 1.5 2.75 1.5H17.25C17.94 1.5 18.5 2.06 18.5 2.75V4.5H1.5Z"
+                      fill="black"
+                    />
+                  </svg>
+                  <span class="ml-5">donations</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!--Main content-->
+        <main class="flex-1 overflow-scroll">
+          <div
+            class="flex flex-col justify-center align mb-14 md:mb-[86px] md:flex-row"
+          >
+            <div class="w-full p-4 bg-gray-200">
+              <div class="bg-[#FFFFFF] text-white p-4 w-full">
+                <h2 class="text-black">Approved Names</h2>
+                <div class="flex">
+                  <div class="pt-6">
+                    <input
+                      type="text"
+                      class="w-full px-4 py-2 border border-gray-300 rounded"
+                      placeholder="search names"
+                    />
+                  </div>
+                </div>
+
+                <!-- ......................... -->
+                <!-- first checkbox main div -->
+
+                <div
+                  class="flex flex-col pb-4 mt-8 border-b border-gray-400 md:flex-row md:items-center"
+                >
+                  <!-- checkbox -->
+                  <div class="w-full md:w-auto md:flex-grow-0">
+                    <!-- input (search name) ends here -->
+                    <input
+                      type="checkbox"
+                      class="w-5 h-5 py-2 border border-gray-300 rounded"
+                      placeholder="Input"
+                    />
+                  </div>
+                  <!-- checkbox ends here -->
+
+                  <div class="m-0 md:mt-0 md:ml-10">
+                    <div class="px-4 py-2 text-black">Names</div>
+                  </div>
+
+                  <div class="m-0 md:mt-0 md:ml-36">
+                    <div class="px-4 py-2 text-black">Alternate Spelling</div>
+                  </div>
+                </div>
+                <!-- first checkbox div ends -->
+
+                <!-- second checkbox div start -->
+                <div
+                  class="flex flex-col w-full pb-4 mt-8 border-b border-gray-400 md:flex-row md:items-center"
+                >
+                  <!-- checkbox -->
+                  <div class="w-full md:w-auto md:flex-grow-0">
+                    <!-- input (search name) ends here -->
+                    <input
+                      type="checkbox"
+                      class="w-5 h-5 py-2 border border-gray-300 rounded"
+                      placeholder="Input"
+                    />
+                  </div>
+                  <!-- checkbox ends here -->
+
+                  <div class="m-0 md:mt-0 md:ml-10">
+                    <div class="px-4 py-2 text-black">Adande</div>
+                  </div>
+
+                  <div class="m-0 md:mt-0 md:ml-36">
+                    <div class="px-4 py-2 text-black">Athande</div>
+                  </div>
+                </div>
+                <!-- second checkbox ends here -->
+                <!-- ..... -->
+
+                <!-- third checkbox div start -->
+                <div
+                  class="flex flex-col pb-4 mt-8 border-b border-gray-400 md:flex-row md:items-center"
+                >
+                  <!-- checkbox -->
+                  <div class="w-full md:w-auto md:flex-grow-0">
+                    <!-- input (search name) ends here -->
+                    <input
+                      type="checkbox"
+                      class="w-5 h-5 py-2 border border-gray-300 rounded"
+                      placeholder="Input"
+                    />
+                  </div>
+                  <!-- checkbox ends here -->
+
+                  <div class="m-0 md:mt-0 md:ml-10">
+                    <div class="px-4 py-2 text-black">Adandejan</div>
+                  </div>
+                </div>
+                <!-- third checkbox div ends-->
+                <!-- fourth checkbox div start -->
+                <div
+                  class="flex flex-col pb-4 mt-8 border-b border-gray-400 md:flex-row md:items-center"
+                >
+                  <!-- checkbox -->
+                  <div class="w-full md:w-auto md:flex-grow-0">
+                    <!-- input (search name) ends here -->
+                    <input
+                      type="checkbox"
+                      class="w-5 h-5 py-2 border border-gray-300 rounded"
+                      placeholder="Input"
+                    />
+                  </div>
+                  <!-- checkbox ends here -->
+
+                  <div class="m-0 md:mt-0 md:ml-10">
+                    <div class="px-4 py-2 text-black">Adọkun</div>
+                  </div>
+                  <div class="m-0 md:mt-0 md:ml-36">
+                    <div class="px-4 py-2 text-black">Adokoun</div>
+                  </div>
+                </div>
+                <!-- fourth checkbox div ends-->
+
+                <!-- fifth checkbox div start -->
+                <div
+                  class="flex flex-col pb-4 mt-8 border-b border-gray-400 md:flex-row md:items-center"
+                >
+                  <!-- checkbox -->
+                  <div class="w-full md:w-auto md:flex-grow-0">
+                    <!-- input (search name) ends here -->
+                    <input
+                      type="checkbox"
+                      class="w-5 h-5 py-2 border border-gray-300 rounded"
+                      placeholder="Input"
+                    />
+                  </div>
+                  <!-- checkbox ends here -->
+
+                  <div class="m-0 md:mt-0 md:ml-10">
+                    <div class="px-4 py-2 text-black">Agbọjẹte</div>
+                  </div>
+                  <div class="m-0 md:mt-0 md:ml-36">
+                    <div class="px-4 py-2 text-black">Agbọdjete</div>
+                  </div>
+                </div>
+                <!-- fifth checkbox div ends-->
+
+                <!-- sixth checkbox div start -->
+                <div
+                  class="flex flex-col pb-4 mt-8 border-b border-gray-400 md:flex-row md:items-center"
+                >
+                  <!-- checkbox -->
+                  <div class="w-full md:w-auto md:flex-grow-0">
+                    <!-- input (search name) ends here -->
+                    <input
+                      type="checkbox"
+                      class="w-5 h-5 py-2 border border-gray-300 rounded"
+                      placeholder="Input"
+                    />
+                  </div>
+                  <!-- checkbox ends here -->
+
+                  <div class="m-0 md:mt-0 md:ml-10">
+                    <div class="px-4 py-2 text-black">Ayihọnsu</div>
+                  </div>
+                  <div class="m-0 md:mt-0 md:ml-36">
+                    <div class="px-4 py-2 text-black">Aihọnsu, Aihonsou</div>
+                  </div>
+                </div>
+                <!-- sixth checkbox div ends-->
+
+                <!-- seventh checkbox div start -->
+                <div
+                  class="flex flex-col pb-4 mt-8 border-b border-gray-400 md:flex-row md:items-center"
+                >
+                  <!-- checkbox -->
+                  <div class="w-full md:w-auto md:flex-grow-0">
+                    <!-- input (search name) ends here -->
+                    <input
+                      type="checkbox"
+                      class="w-5 h-5 py-2 border border-gray-300 rounded"
+                      placeholder="Input"
+                    />
+                  </div>
+                  <!-- checkbox ends here -->
+
+                  <div class="m-0 md:mt-0 md:ml-10">
+                    <div class="px-4 py-2 text-black">Agbọjẹte</div>
+                  </div>
+                  <div class="m-0 md:mt-0 md:ml-36">
+                    <div class="px-4 py-2 text-black">Agbọdjete</div>
+                  </div>
+                </div>
+                <!-- seventh checkbox div ends-->
+
+                <!-- eight checkbox div start -->
+                <div
+                  class="flex flex-col pb-4 mt-8 border-b border-gray-400 md:flex-row md:items-center"
+                >
+                  <!-- checkbox -->
+                  <div class="w-full md:w-auto md:flex-grow-0">
+                    <!-- input (search name) ends here -->
+                    <input
+                      type="checkbox"
+                      class="w-5 h-5 py-2 border border-gray-300 rounded"
+                      placeholder="Input"
+                    />
+                  </div>
+                  <!-- checkbox ends here -->
+
+                  <div class="m-0 md:mt-0 md:ml-10">
+                    <div class="px-4 py-2 text-black">Ayihọnsu</div>
+                  </div>
+                  <div class="m-0 md:mt-0 md:ml-36">
+                    <div class="px-4 py-2 text-black">Aihọnsu, Aihonsou</div>
+                  </div>
+                </div>
+                <!-- eight checkbox div ends-->
+                <!-- ................. -->
+
+                <!-- .......... -->
+                <!-- nineth checkbox div start -->
+                <div
+                  class="flex flex-col pb-4 mt-8 border-b border-gray-400 md:flex-row md:items-center"
+                >
+                  <!-- checkbox -->
+                  <div class="w-full md:w-auto md:flex-grow-0">
+                    <!-- input (search name) ends here -->
+                    <input
+                      type="checkbox"
+                      class="w-5 h-5 py-2 border border-gray-300 rounded"
+                      placeholder="Input"
+                    />
+                  </div>
+                  <!-- checkbox ends here -->
+
+                  <div class="m-0 md:mt-0 md:ml-10">
+                    <div class="px-4 py-2 text-black">Ayihọnsu</div>
+                  </div>
+                  <div class="m-0 md:mt-0 md:ml-36">
+                    <div class="px-4 py-2 text-black">Aihọnsu, Aihonsou</div>
+                  </div>
+                </div>
+                <!-- nineth checkbox div ends-->
+                <!-- ........................... -->
+
+                <!-- ........................ -->
+                <!-- tenth checkbox div start -->
+                <div
+                  class="flex flex-col pb-4 mt-8 border-b border-gray-400 md:flex-row md:items-center"
+                >
+                  <!-- checkbox -->
+                  <div class="w-full md:w-auto md:flex-grow-0">
+                    <!-- input (search name) ends here -->
+                    <input
+                      type="checkbox"
+                      class="w-5 h-5 py-2 border border-gray-300 rounded"
+                      placeholder="Input"
+                    />
+                  </div>
+                  <!-- checkbox ends here -->
+
+                  <div class="m-0 md:mt-0 md:ml-10">
+                    <div class="px-4 py-2 text-black">Agbọjẹte</div>
+                  </div>
+                  <div class="m-0 md:mt-0 md:ml-36">
+                    <div class="px-4 py-2 text-black">Agbọdjete</div>
+                  </div>
+                </div>
+                <!-- tenth checkbox div ends-->
+
+                <!-- eleventh checkbox div start -->
+                <div
+                  class="flex flex-col pb-4 mt-8 border-b border-gray-400 md:flex-row md:items-center"
+                >
+                  <!-- checkbox -->
+                  <div class="w-full md:w-auto md:flex-grow-0">
+                    <!-- input (search name) ends here -->
+                    <input
+                      type="checkbox"
+                      class="w-5 h-5 py-2 border border-gray-300 rounded"
+                      placeholder="Input"
+                    />
+                  </div>
+                  <!-- checkbox ends here -->
+
+                  <div class="m-0 md:mt-0 md:ml-10">
+                    <div class="px-4 py-2 text-black">Ayihọnsu</div>
+                  </div>
+                  <div class="m-0 md:mt-0 md:ml-36">
+                    <div class="px-4 py-2 text-black">Aihọnsu, Aihonsou</div>
+                  </div>
+                </div>
+                <!-- eleventh checkbox div ends-->
+                <!-- ..................... -->
+
+                <!-- .............................. -->
+                <!-- twelveth checkbox div start -->
+                <div
+                  class="flex flex-col pb-4 mt-8 border-b border-gray-400 md:flex-row md:items-center"
+                >
+                  <!-- checkbox -->
+                  <div class="w-full md:w-auto md:flex-grow-0">
+                    <!-- input (search name) ends here -->
+                    <input
+                      type="checkbox"
+                      class="w-5 h-5 py-2 border border-gray-300 rounded"
+                      placeholder="Input"
+                    />
+                  </div>
+                  <!-- checkbox ends here -->
+
+                  <div class="m-0 md:mt-0 md:ml-10">
+                    <div class="px-4 py-2 text-black">Ayihọnsu</div>
+                  </div>
+                  <div class="m-0 md:mt-0 md:ml-36">
+                    <div class="px-4 py-2 text-black">Aihọnsu, Aihonsou</div>
+                  </div>
+                </div>
+                <!-- twelveth checkbox div ends-->
+                <!-- ........................................ -->
+
+                <!-- ........................................ -->
+                <!-- twelveth checkbox div start -->
+                <div
+                  class="flex flex-col pb-4 mt-8 border-b border-gray-400 md:flex-row md:items-center"
+                >
+                  <!-- checkbox -->
+                  <div class="w-full md:w-auto md:flex-grow-0">
+                    <!-- input (search name) ends here -->
+                    <input
+                      type="checkbox"
+                      class="w-5 h-5 py-2 border border-gray-300 rounded"
+                      placeholder="Input"
+                    />
+                  </div>
+                  <!-- checkbox ends here -->
+
+                  <div class="m-0 md:mt-0 md:ml-10">
+                    <div class="px-4 py-2 text-black">Agbọjẹte</div>
+                  </div>
+                  <div class="m-0 md:mt-0 md:ml-36">
+                    <div class="px-4 py-2 text-black">Agbọdjete</div>
+                  </div>
+                </div>
+                <!-- twelveth checkbox div ends-->
+
+                <!-- ....................... -->
+              </div>
+            </div>
+            <!-- second container -->
+            <div class="w-full p-4 bg-gray-200">
+              <div class="w-full p-4 mr-5 text-white shadow-div">
+                <h2 class="pb-4 text-black border-b border-gray-300">
+                  Add New Name
+                </h2>
+                <!-- add new name ends here -->
+
+                <!-- first section of input  -->
+                <div class="flex flex-col justify-between mt-8 md:flex-row">
+                  <div class="mb-3.5">
+                    <h2 class="mb-3 text-black">Name (Yinko)</h2>
+
+                    <input
+                      type="text"
+                      class="w-full px-4 py-2 border border-gray-300 rounded"
+                      placeholder="search names"
+                    />
+                  </div>
+                  <div class="">
+                    <h2 class="w-full mb-3 text-black md:text-[100%]">
+                      Variant / Alternate Spelling
+                    </h2>
+
+                    <input
+                      type="text"
+                      class="w-full px-4 py-2 border border-gray-300 rounded"
+                      placeholder="search names"
+                    />
+                  </div>
+                </div>
+                <!-- first section of input ends here -->
+
+                <!-- second section of input start -->
+
+                <div
+                  class="flex flex-col justify-between pb-4 mt-8 text-black border-b border-gray-300 md:flex-row"
+                >
+                  <div class="mb-3">
+                    <h2 class="mb-3 text-orange-500">Meaning</h2>
+
+                    <input
+                      type="text"
+                      class="w-full px-4 py-2 border border-gray-300 rounded"
+                      placeholder="search names"
+                    />
+                  </div>
+                  <div class="pb-4 text-black">
+                    <h2 class="mb-3 text-orange-500">Syllable</h2>
+
+                    <input
+                      type="text"
+                      class="w-full px-4 py-2 border border-gray-300 rounded"
+                      placeholder="search names"
+                    />
+                  </div>
+                </div>
+                <!-- second section of input ends here -->
+
+                <!-- ................................ -->
+                <div class="">
+                  <div class="pt-7">
+                    <div>
+                      <h3 class="text-black pb-7">Other Information</h3>
+                    </div>
+
+                    <div>
+                      <h3 class="pb-5 text-black">Name Explanation</h3>
+                      <input
+                        type="text"
+                        class="w-full px-4 py-4 border border-gray-300 rounded"
+                        placeholder="search names"
+                      />
+                    </div>
+                  </div>
+                  <!-- .................... -->
+
+                  <div
+                    class="flex flex-col justify-between pb-4 mt-8 text-black border-b border-gray-300 md:flex-row"
+                  >
+                    <div class="mb-3">
+                      <h2 class="mb-3 text-black">Morphology</h2>
+
+                      <input
+                        type="text"
+                        class="w-full px-4 py-2 border border-gray-300 rounded"
+                        placeholder="search names"
+                      />
+                    </div>
+                    <div class="pb-4">
+                      <h2 class="mb-3 text-black">Gloss</h2>
+
+                      <input
+                        type="text"
+                        class="w-full px-4 py-2 border border-gray-300 rounded"
+                        placeholder="search names"
+                      />
+                    </div>
+                  </div>
+                  <!-- ......................................................... -->
+
+                  <div class="border-b border-gray-300 pb-7">
+                    <div class="pt-7">
+                      <div>
+                        <h3
+                          class="block text-sm font-medium text-gray-700 pb-7"
+                        >
+                          Location where name is used/given
+                        </h3>
+                      </div>
+                      <!-- input section -->
+                      <div class="w-full">
+                        <label
+                          for="location"
+                          class="block text-sm font-medium text-gray-700"
+                          >Geo_Location</label
+                        >
+                        <div class="relative">
+                          <select
+                            id="location"
+                            name="location"
+                            class="block w-2/4 px-4 py-2 pr-8 mt-1 leading-tight bg-white border border-gray-300 rounded appearance-none focus:outline-none focus:ring focus:border-blue-500"
+                          >
+                            <option value="london">London</option>
+                            <option value="new-york">New York</option>
+                            <option value="paris">Paris</option>
+                            <option value="tokyo">Tokyo</option>
+                          </select>
+                          <div
+                            class="absolute inset-y-0 flex items-center px-2 pointer-events-none left-64"
+                          >
+                            <svg
+                              class="w-4 h-4 text-gray-400"
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M9 11a1 1 0 0 1-2 0V6a1 1 0 0 1 2 0v5zm2 0a1 1 0 0 1-2 0V6a1 1 0 0 1 2 0v5z"
+                                clip-rule="evenodd"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- input ends -->
+
+                      <!-- first input section -->
+
+                      <!-- ends here -->
+                      <!-- ............. -->
+                    </div>
+                    <!-- new section -->
+                  </div>
+
+                  <div><h2 class="text-black">Famous People</h2></div>
+                  <div
+                    class="flex flex-col justify-between pb-4 mt-8 text-black md:flex-row"
+                  >
+                    <div class="mb-3">
+                      <h2 class="mb-3 text-orange-500">Title</h2>
+
+                      <input
+                        type="text"
+                        class="w-full px-4 py-2 border border-gray-300 rounded"
+                        placeholder=""
+                      />
+                    </div>
+                    <div class="pb-4 text-black">
+                      <h2 class="mb-3 text-orange-500">Name</h2>
+
+                      <input
+                        type="text"
+                        class="w-full px-4 py-2 border border-gray-300 rounded"
+                        placeholder="search names"
+                      />
+                    </div>
+                  </div>
+                  <!-- ................................................... -->
+                </div>
+                <!-- ........................................................ -->
+                <div
+                  class="flex flex-col justify-between pb-4 mt-8 text-black border-b border-gray-300 md:flex-row"
+                >
+                  <div class="mb-3">
+                    <h2 class="mb-3 text-orange-500">Twitter Handle</h2>
+
+                    <input
+                      type="text"
+                      class="w-full px-4 py-2 border border-gray-300 rounded"
+                      placeholder="search names"
+                    />
+                  </div>
+                  <div class="pb-4 text-black w-[225px]">
+                    <img src="../images/iconoir_media-image (1).svg" alt="" />
+
+                    <img
+                      src="../images/png, .gif, .jpg, .jpeg only.svg"
+                      alt=""
+                    />
+
+                    <div class="mt-4 flex flex-col gap-4">
+                      <button
+                        class="px-4 py-2 font-bold text-white text-xs bg-blue-500 rounded hover:bg-blue-600"
+                      >
+                        Click to submit photos
+                      </button>
+
+                      <button
+                        class="px-4 py-2 font-bold text-white text-xs bg-blue-500 rounded hover:bg-blue-600"
+                      >
+                        Add new name
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- ................................................ -->
+                <div>
+                  <div class="ml-5 pt-7">
+                    <h2 class="text-orange-500">Media</h2>
+                    <img src="../images/dashicons_media-audio.svg" alt="" />
+                  </div>
+
+                  <div class="mt-3 ml-4">
+                    <button
+                      class="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-600"
+                    >
+                      Click To Add Name Pronunciation
+                    </button>
+                  </div>
+                  <!-- .................................................................. -->
+                  <div class="flex mt-7">
+                    <div class="mt-3 ml-4">
+                      <button
+                        class="px-4 py-2 font-bold text-white bg-orange-500 rounded hover:bg-blue-600"
+                      >
+                        Submit Name
+                      </button>
+                    </div>
+                    <div class="mt-3 ml-4">
+                      <button
+                        class="px-4 py-2 font-bold text-white bg-gray-500 rounded hover:bg-blue-600"
+                      >
+                        Cancel
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
